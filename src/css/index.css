@@ -1,0 +1,95 @@
+/* GLOBAL STYLES ON-------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+:root {
+    --left: 65%;
+    --right: 35%;
+    --header-height: 4rem;
+    --footer-height: 4rem;
+    --min-height: 15rem;
+    --dark: #121212;
+    --med: #8063FA;
+    --light: #e2e2e2;
+    --dark-text: #cccccc;
+    --content: #909090;
+    --lt-purple: #ffffff;
+    --font: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--dark-text);
+    font-family: var(--font);
+    font-weight: lighter;
+}
+
+header {
+  display: flex;
+  margin: 0;
+  height: var(--header-height);
+  background-color: var(--med);
+}
+
+.logo {
+  line-height: 4rem;
+  margin-left: 4rem;
+  font-size: 2rem;
+  width: var(--left);
+  color: var(--lt-purple);
+  font-family: 'Permanent Marker', cursive;
+}
+nav {
+  width: var(--right);
+}
+
+li {
+  display: inline-flex;
+  line-height: 4rem;
+  padding-right: 2rem;
+  list-style: none;
+  font-family: var(--font);
+}
+
+
+footer {
+  display: flex;
+  height: var(--footer-height);
+  background-color: var(--med);
+  color: var(--dark-text);
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+}
+
+.copyright {
+  width: var(--left);
+  line-height: 4rem;
+  margin-left: 2rem;
+}
+
+.help-pic {
+  position: relative;
+  width: var(--right);
+  padding-top: 0.9rem;
+  height: 60px;
+  width: 60px;
+}
+
+section {
+  height: 70vh;
+  margin: 2rem 5rem 1rem 10rem;
+  /* background-color: var(--content); */
+}
+
+/* GLOBAL STYLES OFF-------------------- */
+
+
+
+
+
