@@ -5,6 +5,7 @@ export default class App extends Component {
     return (
       <div>
         <h1>Hello World!</h1>
+        <p>Testing to see if the branching works</p>
       </div>
     );
   }
