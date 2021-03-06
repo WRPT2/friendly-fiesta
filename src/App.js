@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import './App.css';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello World!</h1>
-        <p>Testing to see if the branching works</p>
-      </div>
+      <>
+        <Header />
+        <NavBar />
+      </>
     );
   }
 }
