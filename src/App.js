@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
-import DevList from './DevList';
+import Logo from './components/Logo';
+import NavBar from './components/NavBar';
+import PhotoGallery from './components/PhotoGallery';
+import DevList from './components/DevList';
+import Copyright from './components/Copyright';
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <header>
-          <span class="logo">WRPT 2 GITHUB GROUP</span>
-          <nav>
-            <ul class="nav-links">
-              <li>Home</li>
-              <li>Coming Soon</li>
-              <li>Spacejam.com</li>
-            </ul>
-          </nav>
+          <Logo />
+          <NavBar />
         </header>
         <main>
           <section>
             <DevList />
           </section>
+          <section>
+            <PhotoGallery />
+          </section>
         </main>
         <footer>
-          <div class="copyright">Produced By Devmountain Students</div>
+          <Copyright />
         </footer>
       </div>
     );
