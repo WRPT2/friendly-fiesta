@@ -2,23 +2,24 @@ import React from 'react';
 
 const Header = (props) => {
   return (
-    <header class="student">
+    <header class="studenta">
       <h1>{props.title}</h1>
-      <span className="stats">CURRENT : {props.totalPlayers}</span>
+      <span className="stats">CURRENT : {props.totalStudents}</span>
     </header>
   );
 };
-const Player = (props) => {
+
+const Student = (props) => {
   return (
-    <div className="player">
-      <span className="player-name">
+    <div className="student">
+      <span className="student-name">
         <button
-          className="remove-player"
-          onClick={() => props.removePlayer(props.id)}
+          className="remove-student"
+          onClick={() => props.removeStudent(props.id)}
         >
           ✖
         </button>
-        {props.playerName}
+        {props.studentName}
       </span>
     </div>
   );
@@ -26,7 +27,7 @@ const Player = (props) => {
 
 class DevList extends React.Component {
   state = {
-    players: [
+    students: [
       {
         name: 'Ryan M',
         id: 1,
@@ -48,30 +49,30 @@ class DevList extends React.Component {
         id: 5,
       },
       {
-        name: 'Join the list',
+        name: 'Ashley',
         id: 6,
       },
     ],
   };
 
-  handleRemovePlayer = (id) => {
+  handleRemoveStudent = (id) => {
     this.setState((prefState) => {
       return {
-        players: prefState.players.filter((p) => p.id !== id),
+        students: prefState.students.filter((p) => p.id !== id),
       };
     });
   };
 
   render() {
     return (
-      <div className="scoreboard">
-        <Header title="STUDENTS" totalPlayers={this.state.players.length} />
-        {this.state.players.map((player) => (
-          <Player
-            playerName={player.name}
-            id={player.id}
-            key={player.id.toString()}
-            removePlayer={this.handleRemovePlayer}
+      <div className="studentboard">
+        <Header title="DEVS" totalStudents={this.state.students.length} />
+        {this.state.students.map((student) => (
+          <Student
+            studentName={student.name}
+            id={student.id}
+            key={student.id.toString()}
+            removeStudent={this.handleRemoveStudent}
           />
         ))}
       </div>
