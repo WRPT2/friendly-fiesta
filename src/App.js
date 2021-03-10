@@ -5,6 +5,8 @@ import PhotoGallery from './components/PhotoGallery';
 import DevList from './components/DevList';
 import Copyright from './components/Copyright';
 
+import TicTacToe from './components/TicTacToe/TicTacToe'
+
 export default class App extends Component {
   render() {
     return (
@@ -19,6 +21,9 @@ export default class App extends Component {
           </section>
           <section>
             <PhotoGallery />
+          </section>
+          <section>
+            <TicTacToe />
           </section>
         </main>
         <footer>
