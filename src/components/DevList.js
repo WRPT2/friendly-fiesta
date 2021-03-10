@@ -37,7 +37,7 @@ class DevList extends React.Component {
         id: 2,
       },
       {
-        name: 'Narty K',
+        name: 'Nartay K',
         id: 3,
       },
       {
